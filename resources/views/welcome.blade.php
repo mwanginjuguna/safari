@@ -24,6 +24,8 @@
 
             <div class="max-w-6xl mx-auto p-4 lg:py-8">
                 <livewire:welcome.hero />
+
+                <livewire:welcome.popular-dishes />
             </div>
         </div>
     </body>
