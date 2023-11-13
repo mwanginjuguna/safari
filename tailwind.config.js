@@ -12,14 +12,14 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', 'Noto Sans', 'Figtree', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 redder: '#CC3333',
                 limegreen: '#4BFF3C',
                 lighter: '#FFF8EE',
                 darkblue: '#2A435D',
-            }
+            },
         },
     },
 
