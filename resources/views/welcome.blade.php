@@ -27,8 +27,8 @@
                     <livewire:welcome.popular-dishes />
                 </div>
 
-                <div class="my-3 lg:mt-10 p-3 lg:py-6 grid md:grid-cols-4 gap-4 items-center border-t">
-                    <div class="col-span-1 md:col-span-4">
+                <div class="my-3 lg:mt-10 p-3 lg:py-6 grid md:grid-cols-3 gap-4 items-center border-t">
+                    <div class="col-span-1 md:col-span-3">
                         <x-section-header title="Fresh, Quality Meals that guarantees your family's health." />
                     </div>
                     
@@ -36,16 +36,16 @@
                         <img src="/images/meal_1-min.jpg" alt="Best Meal Ever" class="w-fit rounded-md">
                     </div>
 
-                    <div class="md:col-span-3">
+                    <div class="md:col-span-2">
                         <h3 class="md:w-[70%] py-2 lg:pt-4 text-redder font-semibold md:text-2xl">
                             Delight Your Family with the Highest Quality Delicacies Across the Sahara
                         </h3>
-                        <p class="md:w-[90%] py-1 text-sm font-medium text-darkblue">
+                        <p class="md:w-[90%] py-1 text-sm md:text-base font-medium text-darkblue">
                             Embark on a flavor-packed journey with our Savory Safari Platter, a feast designed for the adventurous foodie in you! Perfect for families craving a shared experience of delightful, healthy indulgence. It's not just a meal; it's a culinary safari that brings joy to your table!
                         </p>
 
-                        <div class="grid md:grid-cols-3 py-2 md:pt-4 text-darkblue">
-                            <ul class="md:col-span-2 list-disc pt-2 grid gap-y-2">
+                        <div class="grid md:grid-cols-2 py-2 md:pt-4 text-darkblue">
+                            <ul class="md:col-span-1 list-disc pt-2 grid gap-y-2">
 
                                 <li class="flex flex-row gap-x-2">
                                     <x-star-bullet-svg />
@@ -65,7 +65,7 @@
                                     <p class="font-medium text-sm">Make health-conscious choices!</p>
                                 </li>
 
-                                <a href="{{ route('about')}}" class="mt-2 w-fit p-1.5 lg:px-2 bg-lime-200 hover:bg-lime-300 text-redder hover:text-red-500 font-semibold hover:underline hover:underline-offset-2 rounded-md">
+                                <a href="{{ route('about')}}" class="mt-2 w-fit h-fit p-1.5 lg:px-2 bg-lime-200 hover:bg-lime-300 text-redder hover:text-red-500 font-semibold hover:underline hover:underline-offset-2 rounded-md">
                                     <p>Learn More...</p>
                                 </a>
                             </ul>
@@ -132,6 +132,10 @@
                             Beverages
                         </button>
                     </div>
+                </div>
+                
+                <div class="mt-4 py-2 lg:py-6">
+                    <x-breakfast-menu></x-breakfast-menu>
                 </div>
             </div>
         </div>
