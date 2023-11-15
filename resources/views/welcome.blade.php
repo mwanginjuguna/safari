@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class=" bg-lighter selection:bg-red-500 selection:text-white">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
-        <div class="relative min-h-screen bg-dots-darker bg-center bg-lighter selection:bg-red-500 selection:text-white">
+        <div class="relative min-h-screen">
             <livewire:welcome.navigation />
 
             <div class="max-w-6xl mx-auto p-4 lg:py-8">
@@ -27,20 +27,20 @@
                     <livewire:welcome.popular-dishes />
                 </div>
 
-                <div class="my-3 lg:mt-10 p-3 lg:py-6 grid md:grid-cols-4">
-                    <div class="md:col-span-4">
+                <div class="my-3 lg:mt-10 p-3 lg:py-6 grid md:grid-cols-4 gap-4 items-center border-t">
+                    <div class="col-span-1 md:col-span-4">
                         <x-section-header title="Fresh, Quality Meals that guarantees your family's health." />
                     </div>
                     
                     <div class="col-span-1">
-                        <img src="/images/meal_1-min.jpg" alt="Best Meal Ever" class="h-32 md:h-80 rounded-md">
+                        <img src="/images/meal_1-min.jpg" alt="Best Meal Ever" class="w-fit rounded-md">
                     </div>
 
                     <div class="md:col-span-3">
                         <h3 class="md:w-[70%] py-2 lg:pt-4 text-redder font-semibold md:text-2xl">
                             Delight Your Family with the Highest Quality Delicacies Across the Sahara
                         </h3>
-                        <p class="md:w-[90%] py-1 font-medium text-darkblue">
+                        <p class="md:w-[90%] py-1 text-sm font-medium text-darkblue">
                             Embark on a flavor-packed journey with our Savory Safari Platter, a feast designed for the adventurous foodie in you! Perfect for families craving a shared experience of delightful, healthy indulgence. It's not just a meal; it's a culinary safari that brings joy to your table!
                         </p>
 
@@ -48,34 +48,90 @@
                             <ul class="md:col-span-2 list-disc pt-2 grid gap-y-2">
 
                                 <li class="flex flex-row gap-x-2">
-                                    <svg width="24px" height="24px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M274.488 716.853C281.881 668.164 317.688 547.155 279.237 509.358C255.101 485.078 232.229 459.52 209.385 433.999C197.677 419.382 184.032 404.986 177.125 387.317C165.532 352.045 211.705 350.961 235.133 346.106C267.185 336.224 375.151 329.017 387.891 306.881C410.861 268.906 433.257 230.588 455.833 192.378C465.68 172.608 492.575 170.344 504.022 190.094C524.785 229.899 548.279 268.14 572.092 306.223C579.353 318.028 589.133 323.794 603.859 324.407C661.664 328.136 720.21 328.346 777.533 336.662C828.463 354.015 772.965 396.212 754.098 416.834C726.386 445.454 698.299 473.715 670.874 502.606C651.169 523.364 651.873 523.653 656.882 551.713C665.715 606.204 677.603 660.486 684.214 715.214C683.289 740.428 664.653 751.771 642.326 739.999C588.769 712.188 536.928 681.023 481.72 656.517C475.366 653.507 469.9 654.782 463.915 658.42C422.075 683.855 380.126 709.112 338.002 734.072C313.986 750.633 273.808 761.446 274.488 716.853Z" fill="#CC3333"></path> <path d="M635.523 234.171C645.401 204.453 703.594 87.1489 731.704 81.1849C752.257 76.0979 768.829 100.44 758.157 118.1C733.359 155.059 710.965 193.768 687.384 231.572C683.405 238.031 679.612 244.735 674.732 250.475C660.614 266.896 635.731 255.354 635.523 234.171Z" fill="#CC3333"></path> <path d="M219.281 126.411C220.754 105.076 244.025 92.1224 261.174 105.106C292.777 139.174 316.507 180.724 344.975 217.63C361.988 237.591 339.922 268.343 316.383 254.16C283.243 222.724 258.776 182.195 229.56 146.955C225.004 140.967 222.652 133.301 219.281 126.411Z" fill="#CC3333"></path> <path d="M439.93 832.16C442.142 802.116 444.161 772.055 446.752 742.044C447.997 725.767 463.579 710.362 480.12 715.558C490.951 718.601 498.744 728.064 498.564 739.72C497.782 775.161 496.874 810.638 495.42 846.053C497.609 882.032 449.789 893.791 440.884 857.15C439.71 848.993 440.662 840.528 440.662 832.201C440.418 832.187 440.174 832.174 439.93 832.16Z" fill="#CC3333"></path> <path d="M109.355 661.644C88.8916 660.118 76.9036 639.476 87.1936 622.31C104.413 601.524 131.344 589.855 153.729 575.28C172.349 567.69 206.194 543.955 223.963 560.106C237.495 571.651 233.774 591.121 216.889 600.184C197.502 610.59 178.286 621.352 159.374 632.595C142.904 642.826 128.376 656.079 109.355 661.644Z" fill="#CC3333"></path> <path d="M843.281 588.35C813.417 581.43 779.835 569.928 749.885 560.808C721.515 555.294 719.849 513.789 750.719 511.68C787.302 517.392 824.191 527.459 859.548 538.516C886.595 552.742 876.577 590.349 843.281 588.35Z" fill="#CC3333"></path> </g>
-                                    </svg>
+                                    <x-star-bullet-svg />
                                     
                                     <p class="font-medium text-sm">each spoonful is a burst of freshness, and...</p>
                                 </li>
 
                                 <li class="flex flex-row gap-x-2">
-                                    <svg width="24px" height="24px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M274.488 716.853C281.881 668.164 317.688 547.155 279.237 509.358C255.101 485.078 232.229 459.52 209.385 433.999C197.677 419.382 184.032 404.986 177.125 387.317C165.532 352.045 211.705 350.961 235.133 346.106C267.185 336.224 375.151 329.017 387.891 306.881C410.861 268.906 433.257 230.588 455.833 192.378C465.68 172.608 492.575 170.344 504.022 190.094C524.785 229.899 548.279 268.14 572.092 306.223C579.353 318.028 589.133 323.794 603.859 324.407C661.664 328.136 720.21 328.346 777.533 336.662C828.463 354.015 772.965 396.212 754.098 416.834C726.386 445.454 698.299 473.715 670.874 502.606C651.169 523.364 651.873 523.653 656.882 551.713C665.715 606.204 677.603 660.486 684.214 715.214C683.289 740.428 664.653 751.771 642.326 739.999C588.769 712.188 536.928 681.023 481.72 656.517C475.366 653.507 469.9 654.782 463.915 658.42C422.075 683.855 380.126 709.112 338.002 734.072C313.986 750.633 273.808 761.446 274.488 716.853Z" fill="#CC3333"></path> <path d="M635.523 234.171C645.401 204.453 703.594 87.1489 731.704 81.1849C752.257 76.0979 768.829 100.44 758.157 118.1C733.359 155.059 710.965 193.768 687.384 231.572C683.405 238.031 679.612 244.735 674.732 250.475C660.614 266.896 635.731 255.354 635.523 234.171Z" fill="#CC3333"></path> <path d="M219.281 126.411C220.754 105.076 244.025 92.1224 261.174 105.106C292.777 139.174 316.507 180.724 344.975 217.63C361.988 237.591 339.922 268.343 316.383 254.16C283.243 222.724 258.776 182.195 229.56 146.955C225.004 140.967 222.652 133.301 219.281 126.411Z" fill="#CC3333"></path> <path d="M439.93 832.16C442.142 802.116 444.161 772.055 446.752 742.044C447.997 725.767 463.579 710.362 480.12 715.558C490.951 718.601 498.744 728.064 498.564 739.72C497.782 775.161 496.874 810.638 495.42 846.053C497.609 882.032 449.789 893.791 440.884 857.15C439.71 848.993 440.662 840.528 440.662 832.201C440.418 832.187 440.174 832.174 439.93 832.16Z" fill="#CC3333"></path> <path d="M109.355 661.644C88.8916 660.118 76.9036 639.476 87.1936 622.31C104.413 601.524 131.344 589.855 153.729 575.28C172.349 567.69 206.194 543.955 223.963 560.106C237.495 571.651 233.774 591.121 216.889 600.184C197.502 610.59 178.286 621.352 159.374 632.595C142.904 642.826 128.376 656.079 109.355 661.644Z" fill="#CC3333"></path> <path d="M843.281 588.35C813.417 581.43 779.835 569.928 749.885 560.808C721.515 555.294 719.849 513.789 750.719 511.68C787.302 517.392 824.191 527.459 859.548 538.516C886.595 552.742 876.577 590.349 843.281 588.35Z" fill="#CC3333"></path> </g>
-                                    </svg>
+                                    <x-star-bullet-svg />
                                     
-                                    <p class="font-medium text-sm">it's not just a meal; it's a celebration of health and happiness:</p>
+                                    <p class="font-medium text-sm">it's not just a meal; it's a celebration of health and happiness.</p>
                                 </li>
                                 
                                 <li class="flex flex-row gap-x-2">
-                                    <svg width="24px" height="24px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M274.488 716.853C281.881 668.164 317.688 547.155 279.237 509.358C255.101 485.078 232.229 459.52 209.385 433.999C197.677 419.382 184.032 404.986 177.125 387.317C165.532 352.045 211.705 350.961 235.133 346.106C267.185 336.224 375.151 329.017 387.891 306.881C410.861 268.906 433.257 230.588 455.833 192.378C465.68 172.608 492.575 170.344 504.022 190.094C524.785 229.899 548.279 268.14 572.092 306.223C579.353 318.028 589.133 323.794 603.859 324.407C661.664 328.136 720.21 328.346 777.533 336.662C828.463 354.015 772.965 396.212 754.098 416.834C726.386 445.454 698.299 473.715 670.874 502.606C651.169 523.364 651.873 523.653 656.882 551.713C665.715 606.204 677.603 660.486 684.214 715.214C683.289 740.428 664.653 751.771 642.326 739.999C588.769 712.188 536.928 681.023 481.72 656.517C475.366 653.507 469.9 654.782 463.915 658.42C422.075 683.855 380.126 709.112 338.002 734.072C313.986 750.633 273.808 761.446 274.488 716.853Z" fill="#CC3333"></path> <path d="M635.523 234.171C645.401 204.453 703.594 87.1489 731.704 81.1849C752.257 76.0979 768.829 100.44 758.157 118.1C733.359 155.059 710.965 193.768 687.384 231.572C683.405 238.031 679.612 244.735 674.732 250.475C660.614 266.896 635.731 255.354 635.523 234.171Z" fill="#CC3333"></path> <path d="M219.281 126.411C220.754 105.076 244.025 92.1224 261.174 105.106C292.777 139.174 316.507 180.724 344.975 217.63C361.988 237.591 339.922 268.343 316.383 254.16C283.243 222.724 258.776 182.195 229.56 146.955C225.004 140.967 222.652 133.301 219.281 126.411Z" fill="#CC3333"></path> <path d="M439.93 832.16C442.142 802.116 444.161 772.055 446.752 742.044C447.997 725.767 463.579 710.362 480.12 715.558C490.951 718.601 498.744 728.064 498.564 739.72C497.782 775.161 496.874 810.638 495.42 846.053C497.609 882.032 449.789 893.791 440.884 857.15C439.71 848.993 440.662 840.528 440.662 832.201C440.418 832.187 440.174 832.174 439.93 832.16Z" fill="#CC3333"></path> <path d="M109.355 661.644C88.8916 660.118 76.9036 639.476 87.1936 622.31C104.413 601.524 131.344 589.855 153.729 575.28C172.349 567.69 206.194 543.955 223.963 560.106C237.495 571.651 233.774 591.121 216.889 600.184C197.502 610.59 178.286 621.352 159.374 632.595C142.904 642.826 128.376 656.079 109.355 661.644Z" fill="#CC3333"></path> <path d="M843.281 588.35C813.417 581.43 779.835 569.928 749.885 560.808C721.515 555.294 719.849 513.789 750.719 511.68C787.302 517.392 824.191 527.459 859.548 538.516C886.595 552.742 876.577 590.349 843.281 588.35Z" fill="#CC3333"></path> </g>
-                                    </svg>
+                                    <x-star-bullet-svg />
                                     
-                                    <p class="font-medium text-sm">make health-conscious choices!</p>
+                                    <p class="font-medium text-sm">Make health-conscious choices!</p>
                                 </li>
+
+                                <a href="{{ route('about')}}" class="mt-2 w-fit p-1.5 lg:px-2 bg-lime-200 hover:bg-lime-300 text-redder hover:text-red-500 font-semibold hover:underline hover:underline-offset-2 rounded-md">
+                                    <p>Learn More...</p>
+                                </a>
                             </ul>
                             
-                            <img src="/images/fruity-min.jpg" alt="Fresh Meals" class="h-24 rounded-md">
+                            <img src="/images/fruity-min.jpg" alt="Fresh Meals" class="mt-3 w-fit rounded-md">
                         </div>
                     </div>
                     
+                </div>
+            </div>
+
+            <div class="mt-4 lg:mt-6 py-3 lg:py-8 border-t">
+                <div class="mt-5 py-3 lg:py-6 flex flex-row gap-x-3 max-w-6xl mx-auto items-center">
+                    <x-application-logo class="block h-20 w-auto fill-current text-gray-800" />
+                   
+                    <div class="flex flex-col gap-x-2 lg:w-[60%]">
+                        <h3 class="text-redder text-2xl lg:text-4xl font-bold">Amazing Offers</h3>
+
+                        <p class="py-2 md:text-xl text-darkblue">Dive into the mystic world of flavors: it's a sizzling experience for families who crave a healthy, flavor-packed adventure!</p>
+                    </div>
+                </div>
+                
+                <div class="mt-4 py-3 lg:py-6">
+                    <x-video-offers />
+                </div>
+            </div>
+
+            <div class="mt-3 lg:mt-6 py-2 lg:pb-6 max-w-6xl mx-auto border-t">
+                <div class="grid gap-3">
+                    <x-section-header title="Our Menus" ></x-section-header>
+
+                    <h3 class="py-2 font-semibold text-lg uppercase text-redder">
+                        All Your Family's Favorites
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-3 gap-y-3 sm:grid-cols-5 divide-x divide-slate-900 py-1">
+                    <div class="grid items-center">
+                        <button wire:click="loadmenu('breakfast')" class="w-fit mx-auto p-2 lg:px-3 text-sm lg:text-base font-medium rounded text-center active:bg-redder hover:bg-red-600 hover:text-slate-200 transition-all ease-in-out 150ms text-redder hover:underline underline-offset-4">
+                            Breakfast
+                        </button>
+                    </div>
+                    
+                    <div class="grid items-center">
+                        <button wire:click="loadmenu('lunch')" class="w-fit mx-auto p-2 text-sm lg:text-base font-medium rounded text-center active:bg-redder hover:bg-red-600 hover:text-slate-200 transition-all ease-in-out 150ms text-redder hover:underline underline-offset-4">
+                            Lunch
+                        </button>
+                    </div>
+                    
+                    <div class="grid items-center">
+                        <button wire:click="loadmenu('dinner')" class="w-fit mx-auto p-2 lg:px-3 text-sm lg:text-base font-medium rounded text-center active:bg-redder hover:bg-red-600 hover:text-slate-200 transition-all ease-in-out 150ms text-redder hover:underline underline-offset-4">
+                            Dinner
+                        </button>
+                    </div>
+                    
+                    <div class="grid items-center">
+                        <button wire:click="loadmenu('starters')" class="w-fit mx-auto p-2 lg:px-3 text-sm lg:text-base font-medium rounded text-center active:bg-redder hover:bg-red-600 hover:text-slate-200 transition-all ease-in-out 150ms text-redder hover:underline underline-offset-4">
+                            Starters
+                        </button>
+                    </div>
+                    
+                    <div class="grid items-center">
+                        <button wire:click="loadmenu('beverages')" class="w-fit mx-auto p-2 lg:px-3 text-sm lg:text-base font-medium rounded text-center active:bg-redder hover:bg-red-600 hover:text-slate-200 transition-all ease-in-out 150ms text-redder hover:underline underline-offset-4">
+                            Beverages
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
