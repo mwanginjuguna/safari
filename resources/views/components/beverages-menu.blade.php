@@ -1,9 +1,9 @@
 <div class="grid md:grid-cols-3 gap-3">
-    <div class="col-span-1">
-        <img src="/images/coffee-min.jpg" alt="Beverages Meal" class="w-fit rounded-md">
+    <div class="md:col-span-1">
+        <img src="/images/coffee-min.jpg" alt="Beverages Meal" class="w-full md:w-fit rounded-md">
     </div>
 
-    <div class="col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
+    <div class="md:col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
         <h3 class="py-2 font-bold text-lg text-darkblue">Dinner Ideas</h3>
 
         <x-menu-item title="Mocha Latte" description="Rich espresso combined with steamed milk, dark chocolate, and a swirl of whipped cream, sprinkled with cocoa powder." />

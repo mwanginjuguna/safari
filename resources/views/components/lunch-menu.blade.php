@@ -1,9 +1,9 @@
 <div class="grid md:grid-cols-3 gap-3 items-center">
-    <div class="col-span-1">
-        <img src="/images/food_6-min.jpg" alt="Lunch Meal" class="w-fit rounded-md">
+    <div class="md:col-span-1">
+        <img src="/images/food_6-min.jpg" alt="Lunch Meal" class="w-full md:w-fit rounded-md">
     </div>
 
-    <div class="col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
+    <div class="md:col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
         <h3 class="py-2 font-bold text-lg text-darkblue">Lunch Ideas</h3>
         <x-menu-item title="Savory Safari Salad Bowl" description="A vibrant bowl of mixed greens, cherry tomatoes, cucumber, avocado, grilled chicken, and a zesty citrus vinaigrette." />
 

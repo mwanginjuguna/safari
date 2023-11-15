@@ -44,6 +44,12 @@
         @elseif($menus['beverages'] === true)
             <x-beverages-menu></x-beverages-menu>
         @endif
-        
+    </div>
+
+    <div class="pb-6">
+        <a href="{{ route('menu.index') }}" class="px-3 py-2 flex flex-row gap-x-2 w-fit items-center bg-slate-200 text-redder text-sm lg:text-lg text-center font-medium hover:underline underline-offset-2 rounded-md">
+            Browse All Menus
+            <x-yummy-svg />
+        </a>
     </div>
 </div>

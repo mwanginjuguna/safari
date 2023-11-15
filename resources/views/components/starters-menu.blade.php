@@ -1,9 +1,9 @@
 <div class="grid md:grid-cols-3 gap-3">
-    <div class="col-span-1">
-        <img src="/images/food_2-min.jpg" alt="Starter Meals" class="w-fit rounded-md">
+    <div class="md:col-span-1">
+        <img src="/images/food_2-min.jpg" alt="Starter Meals" class="w-full md:w-fit rounded-md">
     </div>
 
-    <div class="col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
+    <div class="md:col-span-2 lg:mx-6 flex flex-col gap-y-3 divide-y divide-red-200 divide-dashed">
         <h3 class="py-2 font-bold text-lg text-darkblue">Starter Ideas</h3>
 
         <x-menu-item title="Safari Samplers Platter" description="An assortment of savory delights, including hummus, tzatziki, stuffed grape leaves, olives, and warm pita bread." />

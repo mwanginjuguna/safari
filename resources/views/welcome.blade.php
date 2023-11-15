@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="mt-4 lg:mt-6 py-3 lg:py-8 border-t">
+            <div class="mt-4 lg:mt-6 p-4 lg:py-8 border-t">
                 <div class="mt-5 py-3 lg:py-6 flex flex-row gap-x-3 max-w-6xl mx-auto items-center">
                     <x-application-logo class="block h-20 w-auto fill-current text-gray-800" />
                    
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="mt-3 lg:mt-6 py-2 lg:pb-6 max-w-6xl mx-auto border-t">
+            <div class="mt-3 lg:mt-6 p-4 lg:pb-6 max-w-6xl mx-auto border-t">
                 <div class="grid gap-3">
                     <x-section-header title="Our Menus" ></x-section-header>
 
@@ -103,6 +103,10 @@
                 </div>
 
                 <livewire:menu-loader />
+            </div>
+
+            <div class="mt-4 lg:mt-8 p-4 max-w-6xl mx-auto lg:py-10 border-t">
+                <x-our-story-card />
             </div>
         </div>
     </body>
