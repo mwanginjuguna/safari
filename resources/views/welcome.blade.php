@@ -118,6 +118,12 @@
 
                 <x-key-features-card />
             </div>
+
+            <div class="mt-4 lg:mt-8 p-4 max-w-6xl mx-auto lg:py-10 border-t">
+                <x-section-header title="Testimonials" />
+
+                <livewire:slider />
+            </div>
         </div>
     </body>
 </html>
