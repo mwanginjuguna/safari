@@ -108,6 +108,16 @@
             <div class="mt-4 lg:mt-8 p-4 max-w-6xl mx-auto lg:py-10 border-t">
                 <x-our-story-card />
             </div>
+
+            <div class="mt-4 lg:mt-8 p-4 max-w-6xl mx-auto lg:py-10 border-t">
+                <x-we-deliver-card />
+            </div>
+            
+            <div class="mt-4 lg:mt-8 p-4 max-w-6xl mx-auto lg:py-10 border-t">
+                <x-section-header title="Experience the best Dining Moments!" />
+
+                <x-key-features-card />
+            </div>
         </div>
     </body>
 </html>
