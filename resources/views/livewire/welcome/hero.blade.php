@@ -8,14 +8,15 @@
         <p class="pt-4 text-lg lg:text-xl font-semibold">"Experience the Wild Flavors of Safari"</p>
         <div class="flex gap-x-4 pt-4 lg:pt-6">
             <x-primary-button wire:click="makeReservation">Make Reservation</x-primary-button>
-
         </div>
-
     </div>
-    <div class="md:px-4 py-3">
-        <img class="h-48 lg:h-fit lg:w-full rounded-md"
-            src="/images/meal_2-min.jpg"
-             alt="Delicious Meals">
+
+    <div class="md:px-4 py-6">
+        <video class="lg:h-fit w-full object-cover object-center rounded-md"
+            src="/storage/videos/welcome-to-safari-restaurant-yt-video-ad.mp4"
+             alt="Welcome to Safari"
+             controls autoplay muted loop
+             ></video>
         <div class="mt-2 py-3 flex gap-x-4">
             <p class="text-green-950 font-semibold">{{ $customerReviews ?? 183 }} Customer Reviews </p>
             <div class="flex flex-row gap-x-1">

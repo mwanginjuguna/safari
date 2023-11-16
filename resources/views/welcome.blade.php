@@ -124,6 +124,8 @@
 
                 <livewire:slider />
             </div>
+
+            <x-main-footer />
         </div>
     </body>
 </html>
