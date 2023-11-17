@@ -17,9 +17,9 @@
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto mt-6 py-5">
-        <div class="grid md:grid-cols-2 gap-4 p-4">
-            <div class="md:col-span-1 flex flex-col items-end gap-y-3">
+    <div class="max-w-4xl mx-auto mt-6 py-5">
+        <div class="grid md:grid-cols-2 gap-4 p-4 items-center">
+            <div class="md:col-span-1 flex flex-col gap-y-3">
                 <div class="py-1">
                     <h4 class="py-1 font-bold text-redder">
                         Golden Safari Restaurant <span class="text-sm">(main)</span>

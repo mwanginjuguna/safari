@@ -12,7 +12,6 @@
             <button wire:click="search" class="p-2 w-fit text-right px-3 font-bold text-white rounded-r-xl">Search</button>
         </div>
     </div>
-    
 
     <div class="mt-4 py-5 lg:py-8">
         <h2 class="py-3 md:w-2/3 font-extrabold text-redder text-xl md:text-4xl">
@@ -79,8 +78,8 @@
             Sunset Refreshments and Libations: <span class="italic font-semibold font-serif">'Each sip is a moment of warmth and indulgence'</span>
         </h2>
 
-        <div class="py-2 pb-5 grid md:grid-cols-3 items-center text-sm lg:text-base text-darkblue md:font-medium">
-            <img src="/images/drinks-and-beverages-landscape.png" alt="Yummy Steak" class="md:hidden md:col-span-1 w-full rounded-md mt-2">
+        <div class="py-2 pb-5 grid md:grid-cols-4 items-center text-sm lg:text-base text-darkblue md:font-medium">
+            <img src="/images/drinks-and-beverages-landscape.png" alt="Yummy Steak" class="md:hidden md:col-span-2 w-full rounded-md mt-2">
 
             <div class="md:col-span-2 py-3">
                 <p class="py-2">
@@ -94,9 +93,14 @@
                 </p>
             </div>
             
-            <img src="/images/drinks-and-beverages-landscape.png" alt="Yummy Steak" class="hidden md:block md:col-span-1 w-full rounded-md mt-2">
+            <img src="/images/drinks-and-beverages-landscape.png" alt="Yummy Steak" class="hidden md:block md:col-span-2 w-full rounded-md mt-2">
         </div>
 
         <x-beverages-menu />
+
+        <div class="mt-6 py-5">
+            <video src="/storage/videos/safari-steak-delivery-yt-video-ad.mp4" class="max-w-3xl mx-auto w-full mt-5 rounded-lg" controls autoplay loop muted></video>
+        </div>
+        
     </div>
 </div>
