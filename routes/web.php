@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
-Route::view('/about', 'welcome')->name('about');
-Route::view('/menus', 'welcome')->name('menu.index');
+Route::view('/about', 'about-us')->name('about');
+Route::view('/menus', 'menus')->name('menu.index');
 Route::view('/faq', 'welcome')->name('faq');
-Route::view('/locations', 'welcome')->name('locations');
+Route::view('/locations', 'locations')->name('locations');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

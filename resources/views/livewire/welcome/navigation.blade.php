@@ -1,5 +1,5 @@
-<div class="sticky sm:top-0 w-full border-b shadow-sm bg-lighter bg-opacity-90">
-    <div class="w-full flex justify-between sm:max-w-6xl sm:mx-auto z-10 py-4">
+<div class="sticky sm:top-0 w-full z-50 border-b shadow-sm bg-lighter bg-opacity-90">
+    <div class="w-full flex justify-between sm:max-w-6xl sm:mx-auto py-4">
         <div class="flex flex-col">
             <!-- Navigation Links -->
             <div class="hidden space-x-3 lg:space-x-8 sm:flex items-center">
