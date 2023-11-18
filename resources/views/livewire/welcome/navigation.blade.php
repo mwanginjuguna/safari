@@ -4,7 +4,7 @@
             <!-- Navigation Links -->
             <div class="hidden space-x-3 lg:space-x-8 sm:flex items-center">
                 <!-- Logo -->
-                <a href="{{ route('dashboard') }}" wire:navigate>
+                <a href="{{ route('home') }}" wire:navigate>
                     <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
                 </a>
                 <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
