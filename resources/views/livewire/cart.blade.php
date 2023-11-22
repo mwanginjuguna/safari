@@ -59,4 +59,66 @@
             <svg width="15px" height="15px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 21.32L21 3.32001" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 3.32001L21 21.32" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         </button>
     </div>
+
+    <div class="mt-5 py-6 grid grid-cols-2">
+        <div class="py-1 col-span-2 md:col-span-1">
+            <h3 class="py-1 text-lg lg:text-2xl text-redder font-bold">
+                Get a discount
+            </h3>
+
+            <form action="" class="py-3">
+                <div class="flex flex-col w-fit">
+
+                    <input type="text" name="coupon" placeholder="Enter Coupon Code" class="mt-4 py-1 px-2 text-sm rounded-md text-redder border-red-500">
+
+                    <x-primary-button class="mt-4 w-fit">Apply</x-primary-button>
+                </div>
+            </form>
+        </div>
+
+        <div class="py-1 col-span-2 md:col-span-1">
+            <h3 class="py-1 text-lg lg:text-2xl text-redder font-bold">
+                Cart Summary
+            </h3>
+
+            <form action="" class="py-3">
+                <div class="flex flex-col text-sm">
+                    <div class="flex justify-between py-2 border-b border-red-200">
+                        <p class="py-1">Order Subtotal</p>
+
+                        <p class="py-1">$12.34</p>
+                    </div>
+
+                    <div class="flex justify-between py-2 border-b border-red-200">
+                        <p class="py-1">Shipping</p>
+
+                        <p class="py-1">Free</p>
+                    </div>
+
+                    <div class="flex justify-between py-2 border-b border-red-200">
+                        <p class="py-1">Coupon</p>
+
+                        <p class="py-1">$2.34</p>
+                    </div>
+
+                    <div class="flex justify-between py-2 border-b border-red-200">
+                        <p class="py-1">Total</p>
+
+                        <p class="py-1">$12.34</p>
+                    </div>
+
+                    <select name="payment-mode" id="payment-mode" class="w-2/3 mt-4 p-2 text-sm bg-redder text-white rounded-lg boder-redder">
+                        <option value="" selected>Select your payment mode</option>
+                        <option value="card">Card</option>
+                        <option value="mpesa">Mpesa</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank">Bank</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+
+                    <x-primary-button class="mt-4 w-fit">Place an Order</x-primary-button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
