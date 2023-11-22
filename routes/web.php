@@ -19,6 +19,8 @@ Route::view('/menus', 'menus')->name('menu.index');
 Route::view('/menu/view', 'menus.show')->name('menu.show');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/locations', 'locations')->name('locations');
+Route::view('/cart', 'cart')->name('cart');
+Route::view('/wishlist', 'wishlist')->name('wishlist');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
