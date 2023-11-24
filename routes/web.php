@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Branch;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,5 +30,21 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+    /**
+     * Needed components for backend dev.
+     * 
+     * Database - migrations and models
+     * - users - include role column on users table for admin
+     * - locations or branches table - The restaurant can have different/many branches
+     * - Each branch will have menus - e.g. breakfast menu, dinner, beverages, alcoholic, coffee menu, etc.
+     * - A menu has many dishes
+     * - A dish has many items/products
+    */
+
+Route::get('/factory', function () {
+    $result = Branch::factory()->make();
+    dd($result);
+});
 
 require __DIR__.'/auth.php';
