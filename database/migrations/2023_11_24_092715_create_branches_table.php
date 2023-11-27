@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name', 100);
             $table->string('address', 250)->nullable();
             $table->string('phone')->nullable();
+            $table->string('type', 50)->default('Store'); // Main/HQ, Store, Satellite, Offices, etc
             $table->timestamps();
         });
     }
